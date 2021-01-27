@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="C:\Users\Daniel\Documents\dev\html_static_pages\css\resume.css">
+</head>
+<body>
+    <header>
+      <nav>
+        <ul>
+            <li><a href="C:\Users\Daniel\Documents\dev\html_static_pages\html\index.html">Home</a></li>
+            <li><a href="C:\Users\Daniel\Documents\dev\html_static_pages\html\resume.html">Resume</a></li>
+            <li><a href="C:\Users\Daniel\Documents\dev\html_static_pages\html\bio.html">Biography</a></li>
+            <li><a href="C:\Users\Daniel\Documents\dev\html_static_pages\html\contacts.html">Contact</a></li>
+            <li><a href="C:\Users\Daniel\Documents\dev\html_static_pages\html\services.html">Services</a></li>
+        </ul>
+    </nav>
+    </header>
+    <form action="index.html" method="post">
+        
+        <h1>Contact</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span> Your Name</legend>
+          
+          <label for="first_name">First Name:</label>
+          <input type="text" id="first_name" name="user_first_name">
+        
+          <label for="last_name">Last Name:</label>
+          <input type="text" id="last_name" name="user_last_name">
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="number">2</span> Your Phone Number</legend>
+        
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+          
+          <label>Phone Number Type:</label>
+          <input type="radio" id="landline" value="landline" name="user_phone_type"><label for="landline">Landline</label><br>
+          <input type="radio" id="mobile" value="mobile" name="user_phone_type"><label for="mobile">Mobile</label>
+        </fieldset>
+        
+        <fieldset>
+          
+          <legend><span class="number">3</span> Your Profile</legend>
+          
+          <label for="job">How Did You Hear About Us                   :</label>
+          <select id="job" name="user_job">
+            <optgroup label="Search Engine">
+              <option value="google">Google</option>
+              <option value="yahoo">Yahoo!</option>
+              <option value="bing">Bing</option>
+              <option value="duckduckgo">DuckDuckGo</option>
+            </optgroup>
+            
+            <optgroup label="Social Media">
+              <option value="facebook">FaceBook</option>'
+              <option value="instagram">Instagranm</option>
+              <option value="twitter">Twitter</option>
+              <option value="snapchat">Snapchat</option>
+            </optgroup>
+            
+            <optgroup label="Recruiter">
+              <option value="business_owner">Business Owner</option>
+              <option value="freelancer">Freelancer</option>
+            </optgroup>
+            
+          </select>
+          
+          <label>Interests:</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
+           <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
+           <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label><br>
+        </fieldset>
+        
+        <button type="submit">Sign Up</button>
+        
+      </form>
+    
+</body>
+</html>
